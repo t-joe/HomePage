@@ -1,0 +1,38 @@
+.Title{
+    font-size: 24px;
+    color: rgb(165, 189, 251);
+    font-weight: bold;
+}
+span.imp{
+    color: rgb(179, 174, 97);
+    font-weight: bold;
+}
+body{
+    color: white;
+    font-size: 12px;
+    background-color: white;
+    font-family: Tahoma, "Times New Roman", "Courier New";
+
+}
+span.sub{
+    font-size: 16px;
+}
+a{
+    color: rgb(143, 66, 58);
+    font-size: 12px;
+}
+a:hover{
+    color: red;
+}
+a:link{
+    color: rgb(143, 66, 58);
+}
+.imp{
+    color: rgb(159,155, 82);
+}
+.center-div
+{
+    margin: 0 auto;
+    width: 800px;
+    padding: 20px 20px 20px 30px;
+}
