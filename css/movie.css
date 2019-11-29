@@ -100,6 +100,8 @@ p.critic{
 }
 dl{
     margin-left: 10pt;
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
 }
 dd{
     margin-bottom: 10pt;
