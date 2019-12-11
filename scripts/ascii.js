@@ -42,6 +42,7 @@ function toggleButton(btn) {
         btn.disabled = true;
         document.getElementById("start").disabled = false;
         document.getElementById("animation").disabled = false;
+        document.getElementById("animationArea").value = aset;
     }
 }
 
