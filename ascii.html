@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS472: ASCII Animation Viewer</title>
+    <link rel="stylesheet" type="text/css" href="css/ascii.css">
+    <script src="scripts/animation.js"></script>
+    <script src="scripts/ascii.js"></script>
+</head>
+<body>
+    <div class="main">
+        <span class="title">CS472: ASCII Animation Viewer</span>
+        <textarea cols="80" rows="20" id="animationArea"></textarea>
+        <div class="controls">
+        <fieldset>
+            <legend>Play controls:</legend>
+            <button id="start" onclick="toggleButton(this)">Start</button>
+            <button id="stop" onclick="toggleButton(this)" disabled="disabled">Stop</button>
+        </fieldset>
+        <fieldset>
+            <legend>Animation:</legend>
+            <select id="animation" onchange="setAnimation(this.options[this.selectedIndex].value)">
+                <option value="Blank" selected>Blank</option>
+                <option value="Exercise">Exercise</option>
+                <option value="Juggler">Juggler</option>
+                <option value="Bike">Bike</option>
+                <option value="Dive">Dive</option>
+                <option value="Custom">Custom</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Size:</legend>
+            <select onchange="setFontsize(this.options[this.selectedIndex].value)">
+                <option value="7pt">Tiny</option>
+                <option value="10pt">Small</option>
+                <option value="12pt" selected>Medium</option>
+                <option value="16pt">Large</option>
+                <option value="24pt">XL</option>
+                <option value="32pt">XXL</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Speed:</legend>
+            <label><input type="checkbox" onchange="setSpeed(this)"> Turbo</label>
+        </fieldset>
+        </div>
+        <div class="validator">
+            <a href="https://validator.w3.org/check/referer"><img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="Valid HTML5" /></a> <br />
+            <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="http://mumstudents.org/cs472/2014-09/images/w3c-css.png" alt="Valid CSS" /></a>
+        </div>
+    </div>
+</body>
+</html>

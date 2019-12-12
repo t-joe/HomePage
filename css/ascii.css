@@ -1,0 +1,44 @@
+body{
+    font-family: sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    background-color: #CCCCFF;
+}
+.title
+{
+    font-size: 32pt;
+    margin:0px;
+}
+.main
+{
+    width: 900px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    text-align: center;
+}
+textarea{
+    width: 90%;
+    height: 400px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+fieldset
+{
+    border: 5px solid black;
+    float: left;
+    width: fit-content;
+}
+.controls
+{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.validator
+{
+  position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 50%;
+}

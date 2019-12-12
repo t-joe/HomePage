@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+    <link href="css/closure.css" rel="stylesheet" type="text/css">
+    <script src="scripts/closure.js"></script>
+</head>
+<body>
+<div id="rudyTxt">
+</div>
+<div>
+    <button onclick="rudyTimer()">Display rudy (Module pattern)</button>
+</div>
+<div>
+<label>Account name: <input type="text" id="accName"></label>
+</div>
+<div>
+<label>Deposit: <input type="text" id="diposite"></label>
+</div>
+<div>
+<button id="createAcc" onclick="createAccount()">Create new account</button>
+</div>
+<div>
+<textarea cols="60" rows="10" readonly id="accountList"></textarea>
+</div>
+<div>
+    <button onclick="displayAccounts()" >Display accounts</button>
+</div>
+</body>
+</html>
