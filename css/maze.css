@@ -1,4 +1,42 @@
-.boundaryRed
+div.boundaryRed
 {
     border: 1px solid red;
+}
+
+#maze div.boundaryRed + div.boundaryRed {
+    border-left: none;
+    border-right: none;
+    z-index: 2;
+
+    left: 151px;
+    height: 50px;
+    width: 198px;
+}
+
+#maze div.boundaryRed + div.boundaryRed + div.boundaryRed {
+    border-left: 1px red solid;
+    border-right: 1px red solid;
+    z-index: 1;
+
+    left: 348px;
+    height: 200px;
+    width: 150px;
+}
+
+#maze div.boundaryRed + div.boundaryRed + div.boundaryRed + div.boundaryRed {
+    border: 1px red solid;
+
+    top: 250px;
+    left: 0;
+    height: 48px;
+    width: 498px;
+}
+
+#maze div.boundaryRed + div.boundaryRed + div.boundaryRed + div.boundaryRed + div.boundaryRed {
+    border-bottom: none;
+
+    top: 100px;
+    left: 200px;
+    height: 150px;
+    width: 98px;
 }
