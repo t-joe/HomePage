@@ -74,11 +74,12 @@ $(document).ready(function () {
     }
     var shuffle = function () {
         if(timer == null) {
-            timer = setInterval(doShuffle, 500);
+            timer = setInterval(doShuffle, 200);
         }
         else
         {
             clearInterval(timer)
+            timer = null;
         }
     }
     var doShuffle = function() {
